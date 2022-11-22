@@ -1,0 +1,34 @@
+{
+  "name": "regex",
+  "version": "1.0.0",
+  "description": "[Ссылка на задание](https://github.com/netology-code/ajs-homeworks/tree/ajs8/regex)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "babel src -d dist",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbabarov/regex.git"
+  },
+  "author": "Anna Popova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbabarov/regex/issues"
+  },
+  "homepage": "https://github.com/rbabarov/regex#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/preset-env": "^7.18.10",
+    "babel-jest": "^28.1.3",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "jest": "^28.1.3"
+  },
+  "dependencies": {
+    "core-js": "^3.24.1"
+  }
+}
