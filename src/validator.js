@@ -1,10 +1,15 @@
 export default class Validator {
-	constructor(name) {
-	  this.name = name;
-	}
- 
-	validateUsername() {
-	  const re = /^[a-z]*[\d{0-3}\w-_][a-z]*$/i; 
-	  return re.test(this.name);
-	}
- }
+  constructor(name) {
+    this.name = name;
+  }
+
+  validateUsername() {
+    let result = '';
+    if (/\d{4,}/.test(this.name) || !/^[a-z][\w-]*[a-z]$/i.test(this.name)) {
+      throw new Error('Имя не должно содержать подряд более трёх цифр, кириллицы, а также начинаться и заканчиваться цифрами, символами подчёркивания или тире');
+    } else {
+      result = this.name;
+    }
+    return result;
+  }
+}
